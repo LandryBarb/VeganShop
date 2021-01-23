@@ -162,20 +162,25 @@ a{
 	grid-gap: 0px;
 	align-items: center;
 	text-align: center;
+	
 }
 
 .showcase-image {
 	grid-area: 1 / 1 / 2 / 2;
+	filter: brightness(60%);
+	
 }
 
 .showcase-text {
 	grid-area: 1 / 1 / 2 / 2;
+	z-index: 10;
 }
 
 .showcase-text h1 {
-	color: #f3f3f3;
+	color: var(--base);
 	font-size: 3rem;
-	padding: 20px;
+	padding: 1rem;
+	
 }
 
 .showcase-text div {
@@ -599,9 +604,10 @@ a{
 	}
 
 	.showcase-text h1 {
-		color: #fff;
-		font-size: 2rem;
-		padding: 20px;
+		
+		font-size: 1.5rem;
+		padding: 10px;
+		
 	}
 
 	.showcase-text div {
@@ -835,6 +841,11 @@ a{
 		
 	}
 }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	/* Styles */
+	}
 /* menu btn */
 
 /* .header .menu-btn {
